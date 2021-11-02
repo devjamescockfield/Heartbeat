@@ -1,0 +1,11 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^discord\.heartbeatuth\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.discord\.heartbeatuth\.com$
+RewriteRule ^/?$ "https\:\/\/discord\.gg\/nQUXftF" [R=301,L]
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
